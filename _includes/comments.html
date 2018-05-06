@@ -1,6 +1,6 @@
 {% if page.comments != false %}
 
-    {% when 'gitalk' %}
+    {% if site.comments_provider == 'gitalk' %}
         <div id="gitalk-container"></div>
         <script src="/assets/js/gitalk.min.js"></script>
         <script>
@@ -16,4 +16,5 @@
         })
         gitalk.render('gitalk-container')
         </script>
+    {% endif %}
 {% endif %}

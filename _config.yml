@@ -50,3 +50,18 @@ plugins:
 
 include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, gitment, gitalk
+comments_provider: gitalk
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+gitalk:
+    owner: laughitover
+    repo: blog-comments
+    clientID: fa5504fe07f319cba9ee
+    clientSecret: 30532bea61e8b63dc5a852e448621a8c89cef99b
+
+
